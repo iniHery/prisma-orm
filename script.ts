@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  // findMany
+  // findMany Start
 
   // Query untuk menemukan atau mencari data lebih dari 1 user
   const users = await prisma.user.findMany();
@@ -17,7 +17,9 @@ async function main() {
   // });
   // console.dir(usersWithPosts, { depth: null });
 
-  // CREATE
+  // findMany End
+
+  // CREATE START
 
   // Query ini berfungsi untuk membuat atau menambahkan 1 user beserta postsnya
   //   const user = await prisma.user.create({
